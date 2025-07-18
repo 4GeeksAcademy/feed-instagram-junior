@@ -22,8 +22,9 @@
                 Instagram
             </span>
             <form class="form-inline">
-                <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-success ms-auto" type="button">
-                    Crear un nuevo post
+                <button data-bs-toggle="modal" data-bs-target="#postModal" class="btn btn-success ms-auto"
+                    type="button">
+                    Crear una nueva publicación
                 </button>
                 <div class="btn-group">
                     <button type="button" class="btn btn-secondary dropdown-toggle" href="#" role="button"
@@ -80,6 +81,35 @@
             </div>
             <div class="col-4">
                 <img src="https://picsum.photos/1080/1080?random=25" alt="imagen random">
+            </div>
+        </div>
+    </div>
+    <!--modal-->
+    <div class="modal " id="postModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="postModalLabel">Crear una Nueva Publicación </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="caption">Descripción:</label>
+                    <textarea name="Caption" id="" class="form-control"
+                        rows="2">Añade una descripción a tu publicacion.</textarea>
+                    <div class="d-flex gap-1">
+                        <button class="btn btn-light">
+                            <i class="fa-solid fa-camera"></i>
+                        </button>
+                        <button class="btn btn-light">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Publicar</button>
+                </div>
             </div>
         </div>
     </div>
