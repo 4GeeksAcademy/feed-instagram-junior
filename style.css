@@ -1,6 +1,17 @@
-div {
-    border: 1px solid black;
-}
-img{
+img {
     width: 100%;
+}
+.cit{
+    max-height: 400px;
+}
+.titulo {
+display: inline-block;
+}
+.hedate {
+    float: right;
+    color: grey;
+    padding-right: 0;
+}
+.segm{
+    margin-top: 6px;
 }
